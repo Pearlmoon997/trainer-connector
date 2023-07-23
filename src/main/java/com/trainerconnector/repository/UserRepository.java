@@ -7,5 +7,5 @@ import java.math.BigInteger;
 
 public interface UserRepository extends JpaRepository<User, BigInteger> {
 
-    BigInteger findIdByPhoneNumber(String phoneNumber);
+    User findOneByPhoneNumber(String phoneNumber);
 }
