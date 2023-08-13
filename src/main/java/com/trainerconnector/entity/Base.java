@@ -31,4 +31,5 @@ public class Base {
 
     @Column(name = "weight", columnDefinition = "DECIMAL(4,1) COMMENT '몸무게'")
     private Float weight;
+    
 }
