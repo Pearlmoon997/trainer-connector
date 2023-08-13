@@ -43,8 +43,6 @@ public class UserServiceImpl implements UserService {
         res.setName(user.getName());
         res.setPhoneNumber(user.getPhoneNumber());
 
-        // 깃 테스트
-        
         return res;
     }
 }
