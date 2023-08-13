@@ -38,7 +38,6 @@ public class UserServiceImpl implements UserService {
     public UserDetailResDto getOne(String phoneNumber) {
 
         User user = userRepository.findOneByPhoneNumber(phoneNumber);
-        log.info(">>>>>>>>>>>>>>>>>" + phoneNumber);
 
         UserDetailResDto res = new UserDetailResDto();
         res.setName(user.getName());
