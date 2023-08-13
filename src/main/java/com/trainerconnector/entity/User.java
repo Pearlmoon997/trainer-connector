@@ -49,7 +49,7 @@ public class User {
     @Column(name = "pt_count", nullable = false, columnDefinition = "INTEGER DEFAULT '0' COMMENT '피티 횟수'")
     private Long ptCount;
 
-    @Column(name = "complete_count", nullable = false, columnDefinition = "INTEGER DEFAULT '0' COMMENT '피티 완료 횟수")
+    @Column(name = "complete_count", nullable = false, columnDefinition = "INTEGER DEFAULT '0' COMMENT '피티 완료 횟수'")
     private Long completedCount;
 
     @Column(name = "address", columnDefinition = "VARCHAR(128) COMMENT '주소'")
