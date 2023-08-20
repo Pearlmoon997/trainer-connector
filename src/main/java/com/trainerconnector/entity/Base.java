@@ -1,6 +1,5 @@
 package com.trainerconnector.entity;
 
-import com.trainerconnector.entity.enums.Purpose;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,6 +18,9 @@ public class Base {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, columnDefinition = "BIGINT UNSIGNED AUTO_INCREMENT COMMENT 'pk'")
     private BigInteger id;
+
+    @Column(name = "code", nullable = false, columnDefinition = "VARCHAR(12) COMMENT 'code'")
+    private String code;
 
     @Column(name = "name", nullable = false, columnDefinition = "VARCHAR(32) COMMENT '이름'")
     private String name;

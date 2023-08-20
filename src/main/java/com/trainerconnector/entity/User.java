@@ -14,6 +14,7 @@ import java.math.BigInteger;
 @Table(name = "user")
 @Entity
 public class User {
+    //FIXME: user쪽 정립되면 삭제.
 
     // pk, name, birth, contact_number, height,
     // weight, warning(질병정보), e_purpose(바디프로필, 다이어트, 건강),
